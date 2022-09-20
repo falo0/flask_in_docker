@@ -16,7 +16,7 @@ def get_db_connection():
 
 
 # this function returns html that is shown in the browser
-# all certificats in the database will be listed
+# all certificates in the database will be listed
 def get_return_string():
     
     # connect to the database and create a cursor
