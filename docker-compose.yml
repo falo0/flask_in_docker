@@ -1,6 +1,6 @@
 version: '3'
 services: 
-    product-service:
+    web-app:
         build: ./api-nasa/
         volumes:
             - ./api-nasa/:/usr/src/app/
@@ -9,9 +9,10 @@ services:
         environment: 
             PORT: 5000
             FLASK_DEBUG: 1
-    db:
+    postgres:
         image: postgres
         restart: always
         environment:
-            POSTGRES_PASSWORD: alisson123
+            POSTGRES_USER: olaf
+            POSTGRES_PASSWORD: 1234
 
